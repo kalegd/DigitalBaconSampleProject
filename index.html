@@ -10,9 +10,9 @@
     <script type="importmap">
       {
         "imports": {
-          "DigitalBacon": "https://cdn.jsdelivr.net/npm/digitalbacon@0.0.2/build/DigitalBacon.min.js",
-          "three": "https://cdn.jsdelivr.net/npm/three@0.139.0/build/three.module.js",
-          "three-mesh-ui": "https://cdn.jsdelivr.net/npm/three-mesh-ui@6.4.3/build/three-mesh-ui.module.js"
+          "DigitalBacon": "https://cdn.jsdelivr.net/npm/digitalbacon@0.1.1/build/DigitalBacon.min.js",
+          "three": "https://cdn.jsdelivr.net/npm/three@0.151.3/build/three.module.js",
+          "three-mesh-ui": "https://cdn.jsdelivr.net/npm/three-mesh-ui@6.5.4/build/three-mesh-ui.module.js"
         }
       }
     </script>
@@ -25,7 +25,9 @@
     <script type="module">
       import { setup } from 'DigitalBacon';
 
-      setup("container", "./my-project.zip");
+      let params = { projectFilePath: './my-project.zip'};
+
+      setup("container", params);
     </script>
   </body>
 </html>
